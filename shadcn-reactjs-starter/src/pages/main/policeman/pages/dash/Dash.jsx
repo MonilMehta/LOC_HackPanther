@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Card,
   CardContent,
@@ -71,13 +71,16 @@ const Dash = () => {
   const [allCases, setAllCases] = useState([]);
   const [alerts, setAlerts] = useState([]);
   const [officers, setOfficers] = useState([]);
+  const [bulletins, setBulletins] = useState([]); // new state for bulletins
   const currentTime = new Date().toLocaleTimeString();
   const [cookies] = useCookies(["name", "accessToken"]);
+  const navigate = useNavigate();
   useEffect(() => {
     fetch("http://localhost:8000/api/case/getCase")
       .then((res) => res.json())
       .then((response) => {
-        setAllCases(response.data);
+        console.log(response.data)
+        setAllCases(response.data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)));
       })
       .catch((err) => console.error("Error fetching cases:", err));
     const alertsGet = async () => {
@@ -92,8 +95,19 @@ const Dash = () => {
       });
       setOfficers(response?.data?.data)
     };
+    // New: Fetch bulletins from the backend
+    const fetchBulletins = async () => {
+      try {
+        const response = await axios.get("http://localhost:8000/api/bulletin/getBulletin");
+        setBulletins(response.data.bulletin || []);
+      } catch (err) {
+        console.error("Error fetching bulletins:", err);
+      }
+    };
+
     alertsGet();
     OfficerGet();
+    fetchBulletins();
   }, []);
 
   return (
@@ -157,42 +171,17 @@ const Dash = () => {
             <CardDescription>Last 24 hours case updates</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            {[
-              {
-                time: "2 hours ago",
-                type: "Theft",
-                location: "Sector 18",
-                status: "Active",
-              },
-              {
-                time: "4 hours ago",
-                type: "Assault",
-                location: "Sector 24",
-                status: "Under Investigation",
-              },
-              {
-                time: "6 hours ago",
-                type: "Cybercrime",
-                location: "Sector 62",
-                status: "Evidence Collection",
-              },
-              {
-                time: "12 hours ago",
-                type: "Burglary",
-                location: "Sector 15",
-                status: "Solved",
-              },
-            ].map((case_, i) => (
+            {allCases && allCases.map((case_) => (
               <div
-                key={i}
+                key={case_._id}
                 className="flex items-center justify-between text-sm"
               >
                 <div className="flex items-center gap-4">
                   <div className="text-muted-foreground min-w-[100px]">
-                    {case_.time}
+                    {Math.floor((Date.now() - new Date(case_.createdAt)) / (1000 * 60 * 60))} hours ago
                   </div>
                   <div>{case_.type}</div>
-                  <div className="text-muted-foreground">{case_.location}</div>
+                  <div className="text-muted-foreground">{case_.location.street}</div>
                 </div>
                 <div
                   className={`px-2 py-1 rounded-full text-xs ${
@@ -216,11 +205,11 @@ const Dash = () => {
             <CardDescription>Frequently used operations</CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
-            <Button variant="outline" className="w-full justify-start gap-2">
+            <Button variant="outline" className="w-full justify-start gap-2" onClick={() => navigate('/report')}>
               <FileText className="h-4 w-4" />
               File New Report
             </Button>
-            <Button variant="outline" className="w-full justify-start gap-2">
+            <Button variant="outline" className="w-full justify-start gap-2" onClick={() => navigate('/main/maps')}>
               <Map className="h-4 w-4" />
               View Patrol Map
             </Button>
@@ -228,7 +217,7 @@ const Dash = () => {
               <Shield className="h-4 w-4" />
               Emergency Response
             </Button>
-            <Button variant="outline" className="w-full justify-start gap-2">
+            <Button variant="outline" className="w-full justify-start gap-2" onClick={() => navigate('/main/alert')}>
               <AlertTriangle className="h-4 w-4" />
               Issue Alert
             </Button>
@@ -294,33 +283,26 @@ const Dash = () => {
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              {[
-                { type: "ALERT", text: "Increased vehicle theft in Sector 18" },
-                { type: "UPDATE", text: "New traffic regulations in effect" },
-                {
-                  type: "WARNING",
-                  text: "Suspicious activity reported in Sector 12",
-                },
-                {
-                  type: "NOTICE",
-                  text: "Community meeting scheduled for tomorrow",
-                },
-              ].map((bulletin, i) => (
-                <div key={i} className="flex items-start gap-2 text-sm">
-                  <span
-                    className={`px-2 py-1 rounded text-xs ${
-                      bulletin.type === "ALERT"
-                        ? "bg-red-100 text-red-800"
-                        : bulletin.type === "WARNING"
-                        ? "bg-yellow-100 text-yellow-800"
-                        : "bg-blue-100 text-blue-800"
-                    }`}
-                  >
-                    {bulletin.type}
-                  </span>
-                  <span>{bulletin.text}</span>
-                </div>
-              ))}
+              {bulletins.length === 0 ? (
+                <div className="text-center text-muted-foreground">No bulletins found</div>
+              ) : (
+                bulletins.map((bulletin) => (
+                  <div key={bulletin._id} className="flex items-start gap-2 text-sm">
+                    <span
+                      className={`px-2 py-1 rounded text-xs ${
+                        bulletin.type?.toLowerCase() === "alert"
+                          ? "bg-red-100 text-red-800"
+                          : bulletin.type?.toLowerCase() === "warning"
+                          ? "bg-yellow-100 text-yellow-800"
+                          : "bg-blue-100 text-blue-800"
+                      }`}
+                    >
+                      {bulletin.type}
+                    </span>
+                    <span>{bulletin.title}</span>
+                  </div>
+                ))
+              )}
             </div>
           </CardContent>
         </Card>

@@ -8,81 +8,91 @@ const PoliceMap = () => {
   const map = useRef(null);
   const mapplsClassObject = useRef(new mappls());
   const [isMapLoaded, setIsMapLoaded] = useState(false);
-  const [locations, setLocations] = useState(null);
+  const markersRef = useRef([]);
   
-  const policeStation = {
-    type: "Feature",
-    properties: {
-      type: "police_station",
-      title: "Vile Parle Police Station",
-      description: "Main police station",
-      icon: "https://apis.mapmyindia.com/map_v3/1.png",
-      "icon-size": 0.75,
-      "icon-offset": [0, -10],
-      popupHtml: `
-        <div class='p-2'>
-          <h3 class='font-bold'>Vile Parle Police Station</h3>
-          <p>Click to navigate</p>
-        </div>
-      `
-    },
-    geometry: {
-      type: "Point",
-      coordinates: [72.8327116, 19.1031659] // Longitude, Latitude
-    }
-  };
+  const POLICE_STATION_COORDS = [ 19.1031659,72.8327116];
 
   const openInGoogleMaps = (lat, lng) => {
     const url = `https://www.google.com/maps?q=${lat},${lng}`;
     window.open(url, '_blank');
   };
 
-  const fetchCaseLocations = async () => {
+  const addMarkerToMap = (map, lat, lng, title, description, isPoliceStation = false) => {
+    const marker = mapplsClassObject.current.Marker({
+      map: map,
+      position: { lng, lat },
+      popupHtml: `
+        <div class='p-2'>
+          <h3 class='font-bold'>${title}</h3>
+          <p>${description}</p>
+          <p>Click to navigate</p>
+        </div>
+      `,
+      icon: isPoliceStation 
+        ? "https://apis.mapmyindia.com/map_v3/1.png"
+        : "https://apis.mapmyindia.com/map_v3/2.png",
+      iconSize: [30, 30],
+      draggable: false,
+      clusterable: true
+    });
+
+    marker.addListener('click', () => {
+      openInGoogleMaps(lat, lng);
+    });
+
+    return marker;
+  };
+
+  const fetchAndDisplayLocations = async (map) => {
     try {
       const response = await fetch('http://localhost:8000/api/case/getCaseLocation');
       const data = await response.json();
-      console.log('Case locations:', data);
       
-      // Transform case data to GeoJSON format
-      const caseFeatures = data.data
-        .filter(caseData => caseData.coordinates && caseData.coordinates.lat && caseData.coordinates.lon)
-        .map(caseData => ({
-          type: "Feature",
-          properties: {
-            type: "case_location",
-            title: `Case #${caseData.caseNo}`,
-            description: `${caseData.location.street}, ${caseData.location.city}`,
-            icon: "https://apis.mapmyindia.com/map_v3/2.png",
-            "icon-size": 0.75,
-            "icon-offset": [0, -10],
-            popupHtml: `
-              <div class='p-2'>
-                <h3 class='font-bold'>Case #${caseData.caseNo}</h3>
-                <p>${caseData.location.street}, ${caseData.location.city}</p>
-                <p>Click to navigate</p>
-              </div>
-            `
-          },
-          geometry: {
-            type: "Point",
-            coordinates: [
-              parseFloat(caseData.coordinates.lon), // Longitude
-              parseFloat(caseData.coordinates.lat)  // Latitude
-            ]
-          }
-        }));
+      // Clear existing markers
+      markersRef.current.forEach(marker => marker.remove());
+      markersRef.current = [];
 
-      // Combine police station and case locations
-      return {
-        type: "FeatureCollection",
-        features: [policeStation, ...caseFeatures]
-      };
+      // Add police station marker
+      const policeStationMarker = addMarkerToMap(
+        map,
+        POLICE_STATION_COORDS[1],
+        POLICE_STATION_COORDS[0],
+        "Vile Parle Police Station",
+        "Main police station",
+        true
+      );
+      markersRef.current.push(policeStationMarker);
+
+      // Add case location markers
+      data.data
+        .filter(caseData => caseData.location?.latitude && caseData.location?.longtitude)
+        .forEach(caseData => {
+          const lat = parseFloat(caseData.location.latitude);
+          const lng = parseFloat(caseData.location.longtitude);
+
+          if (!isNaN(lat) && !isNaN(lng)) {
+            const marker = addMarkerToMap(
+              map,
+              lat,
+              lng,
+              `Case #${caseData.caseNo}`,
+              `${caseData.location.street}, ${caseData.location.city}`
+            );
+            markersRef.current.push(marker);
+          }
+        });
+
+      // Fit bounds to show all markers
+      const bounds = markersRef.current.reduce((bounds, marker) => {
+        const position = marker.getPosition();
+        bounds.extend(position);
+        return bounds;
+      }, mapplsClassObject.current.LatLngBounds());
+
+      map.fitBounds(bounds, { padding: 50 });
+
     } catch (error) {
       console.error('Error fetching case locations:', error);
-      return {
-        type: "FeatureCollection",
-        features: [policeStation]
-      };
     }
   };
 
@@ -93,46 +103,30 @@ const PoliceMap = () => {
         map.current.remove();
       }
 
-      // Create map instance centered on Vile Parle Police Station
+      // Create map instance
       map.current = mapplsClassObject.current.Map({
         id: "map",
         properties: {
-          center: [72.8327116, 19.1031659], // Longitude, Latitude
+          center: POLICE_STATION_COORDS,
           zoom: 12
         }
       });
 
-      // Set map loaded state
+      // Set map loaded state and add markers
       map.current.on("load", () => {
         setIsMapLoaded(true);
+        fetchAndDisplayLocations(map.current);
       });
     });
-  }, []);
 
-  useEffect(() => {
-    if (isMapLoaded) {
-      // Fetch and add locations to map
-      fetchCaseLocations().then(geoJsonData => {
-        if (geoJsonData) {
-          setLocations(geoJsonData);
-          mapplsClassObject.current.addGeoJson({
-            map: map.current,
-            data: geoJsonData,
-            fitbounds: true,
-            cType: 0,
-            popupOptions: {
-              offset: { bottom: [0, -20] },
-              closeButton: true
-            },
-            click: (e) => {
-              const { coordinates } = e.geometry;
-              openInGoogleMaps(coordinates[1], coordinates[0]); // Latitude, Longitude
-            }
-          });
-        }
-      });
-    }
-  }, [isMapLoaded]);
+    // Cleanup function
+    return () => {
+      if (map.current) {
+        markersRef.current.forEach(marker => marker.remove());
+        map.current.remove();
+      }
+    };
+  }, []);
 
   return (
     <Card className="w-full max-w-6xl mx-auto">

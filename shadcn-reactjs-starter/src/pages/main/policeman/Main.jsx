@@ -30,6 +30,7 @@ const Dashboard = () => {
             <Route path="cases/*" element={<Cases />} />
             <Route path="chat" element={<Chat />} />
             <Route path="/" element={<Dash />} />
+            <Route path="/dashboard" element={<Dash />} />
             <Route path="evidence" element={<Evidence />} />
             <Route path="personnel" element={<Personal />} />
             <Route path="roster" element={<DutyRoster />} />
