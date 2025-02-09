@@ -1,0 +1,2546 @@
+{
+    "years": [
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+    ],
+    "cities": [
+        "New York",
+        "Los Angeles",
+        "Chicago",
+        "Houston",
+        "Miami"
+    ],
+    "crime_categories": [
+        "Theft",
+        "Murder",
+        "Assault",
+        "Fraud",
+        "Cybercrime",
+        "Drug-related"
+    ],
+    "crime_data": [
+        {
+            "year": 2000,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 1908,
+                "Murder": 174,
+                "Assault": 546,
+                "Fraud": 1557,
+                "Cybercrime": 374,
+                "Drug-related": 2311
+            },
+            "crime_percentage": {
+                "Theft": 27.77,
+                "Murder": 2.53,
+                "Assault": 7.95,
+                "Fraud": 22.66,
+                "Cybercrime": 5.44,
+                "Drug-related": 33.64
+            }
+        },
+        {
+            "year": 2000,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 3954,
+                "Murder": 93,
+                "Assault": 1460,
+                "Fraud": 955,
+                "Cybercrime": 585,
+                "Drug-related": 1150
+            },
+            "crime_percentage": {
+                "Theft": 48.24,
+                "Murder": 1.13,
+                "Assault": 17.81,
+                "Fraud": 11.65,
+                "Cybercrime": 7.14,
+                "Drug-related": 14.03
+            }
+        },
+        {
+            "year": 2000,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 3005,
+                "Murder": 129,
+                "Assault": 831,
+                "Fraud": 1661,
+                "Cybercrime": 1091,
+                "Drug-related": 3650
+            },
+            "crime_percentage": {
+                "Theft": 28.99,
+                "Murder": 1.24,
+                "Assault": 8.02,
+                "Fraud": 16.02,
+                "Cybercrime": 10.52,
+                "Drug-related": 35.21
+            }
+        },
+        {
+            "year": 2000,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 2359,
+                "Murder": 164,
+                "Assault": 878,
+                "Fraud": 1331,
+                "Cybercrime": 835,
+                "Drug-related": 3309
+            },
+            "crime_percentage": {
+                "Theft": 26.58,
+                "Murder": 1.85,
+                "Assault": 9.89,
+                "Fraud": 15.0,
+                "Cybercrime": 9.41,
+                "Drug-related": 37.28
+            }
+        },
+        {
+            "year": 2000,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 4546,
+                "Murder": 104,
+                "Assault": 1257,
+                "Fraud": 272,
+                "Cybercrime": 1280,
+                "Drug-related": 1345
+            },
+            "crime_percentage": {
+                "Theft": 51.64,
+                "Murder": 1.18,
+                "Assault": 14.28,
+                "Fraud": 3.09,
+                "Cybercrime": 14.54,
+                "Drug-related": 15.28
+            }
+        },
+        {
+            "year": 2001,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 890,
+                "Murder": 82,
+                "Assault": 2207,
+                "Fraud": 223,
+                "Cybercrime": 345,
+                "Drug-related": 2863
+            },
+            "crime_percentage": {
+                "Theft": 13.46,
+                "Murder": 1.24,
+                "Assault": 33.39,
+                "Fraud": 3.37,
+                "Cybercrime": 5.22,
+                "Drug-related": 43.31
+            }
+        },
+        {
+            "year": 2001,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 2946,
+                "Murder": 224,
+                "Assault": 868,
+                "Fraud": 796,
+                "Cybercrime": 92,
+                "Drug-related": 2440
+            },
+            "crime_percentage": {
+                "Theft": 39.99,
+                "Murder": 3.04,
+                "Assault": 11.78,
+                "Fraud": 10.81,
+                "Cybercrime": 1.25,
+                "Drug-related": 33.13
+            }
+        },
+        {
+            "year": 2001,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 4755,
+                "Murder": 220,
+                "Assault": 2170,
+                "Fraud": 1343,
+                "Cybercrime": 424,
+                "Drug-related": 1521
+            },
+            "crime_percentage": {
+                "Theft": 45.58,
+                "Murder": 2.11,
+                "Assault": 20.8,
+                "Fraud": 12.87,
+                "Cybercrime": 4.06,
+                "Drug-related": 14.58
+            }
+        },
+        {
+            "year": 2001,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 3293,
+                "Murder": 174,
+                "Assault": 640,
+                "Fraud": 1410,
+                "Cybercrime": 216,
+                "Drug-related": 2870
+            },
+            "crime_percentage": {
+                "Theft": 38.28,
+                "Murder": 2.02,
+                "Assault": 7.44,
+                "Fraud": 16.39,
+                "Cybercrime": 2.51,
+                "Drug-related": 33.36
+            }
+        },
+        {
+            "year": 2001,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 4792,
+                "Murder": 152,
+                "Assault": 823,
+                "Fraud": 484,
+                "Cybercrime": 537,
+                "Drug-related": 2699
+            },
+            "crime_percentage": {
+                "Theft": 50.51,
+                "Murder": 1.6,
+                "Assault": 8.68,
+                "Fraud": 5.1,
+                "Cybercrime": 5.66,
+                "Drug-related": 28.45
+            }
+        },
+        {
+            "year": 2002,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 4689,
+                "Murder": 78,
+                "Assault": 367,
+                "Fraud": 419,
+                "Cybercrime": 367,
+                "Drug-related": 3299
+            },
+            "crime_percentage": {
+                "Theft": 50.86,
+                "Murder": 0.85,
+                "Assault": 3.98,
+                "Fraud": 4.54,
+                "Cybercrime": 3.98,
+                "Drug-related": 35.78
+            }
+        },
+        {
+            "year": 2002,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 1738,
+                "Murder": 156,
+                "Assault": 374,
+                "Fraud": 198,
+                "Cybercrime": 1367,
+                "Drug-related": 753
+            },
+            "crime_percentage": {
+                "Theft": 37.9,
+                "Murder": 3.4,
+                "Assault": 8.16,
+                "Fraud": 4.32,
+                "Cybercrime": 29.81,
+                "Drug-related": 16.42
+            }
+        },
+        {
+            "year": 2002,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 1214,
+                "Murder": 210,
+                "Assault": 455,
+                "Fraud": 1875,
+                "Cybercrime": 144,
+                "Drug-related": 2036
+            },
+            "crime_percentage": {
+                "Theft": 20.46,
+                "Murder": 3.54,
+                "Assault": 7.67,
+                "Fraud": 31.6,
+                "Cybercrime": 2.43,
+                "Drug-related": 34.31
+            }
+        },
+        {
+            "year": 2002,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 3146,
+                "Murder": 39,
+                "Assault": 349,
+                "Fraud": 1994,
+                "Cybercrime": 1385,
+                "Drug-related": 1769
+            },
+            "crime_percentage": {
+                "Theft": 36.24,
+                "Murder": 0.45,
+                "Assault": 4.02,
+                "Fraud": 22.97,
+                "Cybercrime": 15.95,
+                "Drug-related": 20.38
+            }
+        },
+        {
+            "year": 2002,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 735,
+                "Murder": 19,
+                "Assault": 2602,
+                "Fraud": 1491,
+                "Cybercrime": 842,
+                "Drug-related": 2491
+            },
+            "crime_percentage": {
+                "Theft": 8.99,
+                "Murder": 0.23,
+                "Assault": 31.81,
+                "Fraud": 18.23,
+                "Cybercrime": 10.29,
+                "Drug-related": 30.45
+            }
+        },
+        {
+            "year": 2003,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 2257,
+                "Murder": 40,
+                "Assault": 327,
+                "Fraud": 1262,
+                "Cybercrime": 1209,
+                "Drug-related": 1064
+            },
+            "crime_percentage": {
+                "Theft": 36.65,
+                "Murder": 0.65,
+                "Assault": 5.31,
+                "Fraud": 20.49,
+                "Cybercrime": 19.63,
+                "Drug-related": 17.28
+            }
+        },
+        {
+            "year": 2003,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 3926,
+                "Murder": 243,
+                "Assault": 1528,
+                "Fraud": 659,
+                "Cybercrime": 770,
+                "Drug-related": 3389
+            },
+            "crime_percentage": {
+                "Theft": 37.34,
+                "Murder": 2.31,
+                "Assault": 14.53,
+                "Fraud": 6.27,
+                "Cybercrime": 7.32,
+                "Drug-related": 32.23
+            }
+        },
+        {
+            "year": 2003,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 1443,
+                "Murder": 178,
+                "Assault": 2803,
+                "Fraud": 1209,
+                "Cybercrime": 1371,
+                "Drug-related": 1709
+            },
+            "crime_percentage": {
+                "Theft": 16.56,
+                "Murder": 2.04,
+                "Assault": 32.17,
+                "Fraud": 13.88,
+                "Cybercrime": 15.74,
+                "Drug-related": 19.61
+            }
+        },
+        {
+            "year": 2003,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 4894,
+                "Murder": 87,
+                "Assault": 1895,
+                "Fraud": 332,
+                "Cybercrime": 206,
+                "Drug-related": 1137
+            },
+            "crime_percentage": {
+                "Theft": 57.23,
+                "Murder": 1.02,
+                "Assault": 22.16,
+                "Fraud": 3.88,
+                "Cybercrime": 2.41,
+                "Drug-related": 13.3
+            }
+        },
+        {
+            "year": 2003,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 1511,
+                "Murder": 191,
+                "Assault": 1695,
+                "Fraud": 1221,
+                "Cybercrime": 301,
+                "Drug-related": 2875
+            },
+            "crime_percentage": {
+                "Theft": 19.39,
+                "Murder": 2.45,
+                "Assault": 21.75,
+                "Fraud": 15.67,
+                "Cybercrime": 3.86,
+                "Drug-related": 36.89
+            }
+        },
+        {
+            "year": 2004,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 775,
+                "Murder": 218,
+                "Assault": 2765,
+                "Fraud": 346,
+                "Cybercrime": 1363,
+                "Drug-related": 3648
+            },
+            "crime_percentage": {
+                "Theft": 8.5,
+                "Murder": 2.39,
+                "Assault": 30.33,
+                "Fraud": 3.8,
+                "Cybercrime": 14.95,
+                "Drug-related": 40.02
+            }
+        },
+        {
+            "year": 2004,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 4271,
+                "Murder": 238,
+                "Assault": 1719,
+                "Fraud": 439,
+                "Cybercrime": 593,
+                "Drug-related": 320
+            },
+            "crime_percentage": {
+                "Theft": 56.35,
+                "Murder": 3.14,
+                "Assault": 22.68,
+                "Fraud": 5.79,
+                "Cybercrime": 7.82,
+                "Drug-related": 4.22
+            }
+        },
+        {
+            "year": 2004,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 1858,
+                "Murder": 233,
+                "Assault": 1045,
+                "Fraud": 453,
+                "Cybercrime": 594,
+                "Drug-related": 1457
+            },
+            "crime_percentage": {
+                "Theft": 32.94,
+                "Murder": 4.13,
+                "Assault": 18.53,
+                "Fraud": 8.03,
+                "Cybercrime": 10.53,
+                "Drug-related": 25.83
+            }
+        },
+        {
+            "year": 2004,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 4679,
+                "Murder": 165,
+                "Assault": 1706,
+                "Fraud": 1630,
+                "Cybercrime": 566,
+                "Drug-related": 2342
+            },
+            "crime_percentage": {
+                "Theft": 42.2,
+                "Murder": 1.49,
+                "Assault": 15.39,
+                "Fraud": 14.7,
+                "Cybercrime": 5.1,
+                "Drug-related": 21.12
+            }
+        },
+        {
+            "year": 2004,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 741,
+                "Murder": 277,
+                "Assault": 419,
+                "Fraud": 1657,
+                "Cybercrime": 1356,
+                "Drug-related": 1805
+            },
+            "crime_percentage": {
+                "Theft": 11.85,
+                "Murder": 4.43,
+                "Assault": 6.7,
+                "Fraud": 26.49,
+                "Cybercrime": 21.68,
+                "Drug-related": 28.86
+            }
+        },
+        {
+            "year": 2005,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 2144,
+                "Murder": 293,
+                "Assault": 2605,
+                "Fraud": 992,
+                "Cybercrime": 1078,
+                "Drug-related": 3144
+            },
+            "crime_percentage": {
+                "Theft": 20.9,
+                "Murder": 2.86,
+                "Assault": 25.4,
+                "Fraud": 9.67,
+                "Cybercrime": 10.51,
+                "Drug-related": 30.66
+            }
+        },
+        {
+            "year": 2005,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 3222,
+                "Murder": 249,
+                "Assault": 770,
+                "Fraud": 1367,
+                "Cybercrime": 898,
+                "Drug-related": 1051
+            },
+            "crime_percentage": {
+                "Theft": 42.64,
+                "Murder": 3.29,
+                "Assault": 10.19,
+                "Fraud": 18.09,
+                "Cybercrime": 11.88,
+                "Drug-related": 13.91
+            }
+        },
+        {
+            "year": 2005,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 4304,
+                "Murder": 243,
+                "Assault": 2937,
+                "Fraud": 1634,
+                "Cybercrime": 658,
+                "Drug-related": 1320
+            },
+            "crime_percentage": {
+                "Theft": 38.79,
+                "Murder": 2.19,
+                "Assault": 26.47,
+                "Fraud": 14.73,
+                "Cybercrime": 5.93,
+                "Drug-related": 11.9
+            }
+        },
+        {
+            "year": 2005,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 1420,
+                "Murder": 203,
+                "Assault": 1614,
+                "Fraud": 833,
+                "Cybercrime": 349,
+                "Drug-related": 2828
+            },
+            "crime_percentage": {
+                "Theft": 19.59,
+                "Murder": 2.8,
+                "Assault": 22.27,
+                "Fraud": 11.49,
+                "Cybercrime": 4.82,
+                "Drug-related": 39.02
+            }
+        },
+        {
+            "year": 2005,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 2131,
+                "Murder": 43,
+                "Assault": 1783,
+                "Fraud": 1509,
+                "Cybercrime": 604,
+                "Drug-related": 2480
+            },
+            "crime_percentage": {
+                "Theft": 24.92,
+                "Murder": 0.5,
+                "Assault": 20.85,
+                "Fraud": 17.65,
+                "Cybercrime": 7.06,
+                "Drug-related": 29.01
+            }
+        },
+        {
+            "year": 2006,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 2080,
+                "Murder": 246,
+                "Assault": 2894,
+                "Fraud": 336,
+                "Cybercrime": 1420,
+                "Drug-related": 1194
+            },
+            "crime_percentage": {
+                "Theft": 25.46,
+                "Murder": 3.01,
+                "Assault": 35.42,
+                "Fraud": 4.11,
+                "Cybercrime": 17.38,
+                "Drug-related": 14.61
+            }
+        },
+        {
+            "year": 2006,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 3819,
+                "Murder": 196,
+                "Assault": 1619,
+                "Fraud": 1732,
+                "Cybercrime": 660,
+                "Drug-related": 1869
+            },
+            "crime_percentage": {
+                "Theft": 38.6,
+                "Murder": 1.98,
+                "Assault": 16.36,
+                "Fraud": 17.5,
+                "Cybercrime": 6.67,
+                "Drug-related": 18.89
+            }
+        },
+        {
+            "year": 2006,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 1670,
+                "Murder": 156,
+                "Assault": 528,
+                "Fraud": 533,
+                "Cybercrime": 1367,
+                "Drug-related": 3146
+            },
+            "crime_percentage": {
+                "Theft": 22.57,
+                "Murder": 2.11,
+                "Assault": 7.14,
+                "Fraud": 7.2,
+                "Cybercrime": 18.47,
+                "Drug-related": 42.51
+            }
+        },
+        {
+            "year": 2006,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 2950,
+                "Murder": 273,
+                "Assault": 2802,
+                "Fraud": 1326,
+                "Cybercrime": 685,
+                "Drug-related": 335
+            },
+            "crime_percentage": {
+                "Theft": 35.24,
+                "Murder": 3.26,
+                "Assault": 33.47,
+                "Fraud": 15.84,
+                "Cybercrime": 8.18,
+                "Drug-related": 4.0
+            }
+        },
+        {
+            "year": 2006,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 3789,
+                "Murder": 14,
+                "Assault": 2057,
+                "Fraud": 579,
+                "Cybercrime": 1436,
+                "Drug-related": 355
+            },
+            "crime_percentage": {
+                "Theft": 46.04,
+                "Murder": 0.17,
+                "Assault": 24.99,
+                "Fraud": 7.04,
+                "Cybercrime": 17.45,
+                "Drug-related": 4.31
+            }
+        },
+        {
+            "year": 2007,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 4688,
+                "Murder": 204,
+                "Assault": 1241,
+                "Fraud": 1484,
+                "Cybercrime": 309,
+                "Drug-related": 987
+            },
+            "crime_percentage": {
+                "Theft": 52.6,
+                "Murder": 2.29,
+                "Assault": 13.92,
+                "Fraud": 16.65,
+                "Cybercrime": 3.47,
+                "Drug-related": 11.07
+            }
+        },
+        {
+            "year": 2007,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 698,
+                "Murder": 10,
+                "Assault": 2125,
+                "Fraud": 949,
+                "Cybercrime": 615,
+                "Drug-related": 2284
+            },
+            "crime_percentage": {
+                "Theft": 10.45,
+                "Murder": 0.15,
+                "Assault": 31.81,
+                "Fraud": 14.2,
+                "Cybercrime": 9.21,
+                "Drug-related": 34.19
+            }
+        },
+        {
+            "year": 2007,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 3867,
+                "Murder": 141,
+                "Assault": 236,
+                "Fraud": 374,
+                "Cybercrime": 681,
+                "Drug-related": 3175
+            },
+            "crime_percentage": {
+                "Theft": 45.63,
+                "Murder": 1.66,
+                "Assault": 2.78,
+                "Fraud": 4.41,
+                "Cybercrime": 8.04,
+                "Drug-related": 37.47
+            }
+        },
+        {
+            "year": 2007,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 658,
+                "Murder": 162,
+                "Assault": 1796,
+                "Fraud": 856,
+                "Cybercrime": 636,
+                "Drug-related": 3376
+            },
+            "crime_percentage": {
+                "Theft": 8.79,
+                "Murder": 2.16,
+                "Assault": 24.0,
+                "Fraud": 11.44,
+                "Cybercrime": 8.5,
+                "Drug-related": 45.11
+            }
+        },
+        {
+            "year": 2007,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 1330,
+                "Murder": 171,
+                "Assault": 926,
+                "Fraud": 639,
+                "Cybercrime": 1215,
+                "Drug-related": 2596
+            },
+            "crime_percentage": {
+                "Theft": 19.34,
+                "Murder": 2.49,
+                "Assault": 13.47,
+                "Fraud": 9.29,
+                "Cybercrime": 17.67,
+                "Drug-related": 37.75
+            }
+        },
+        {
+            "year": 2008,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 1495,
+                "Murder": 69,
+                "Assault": 2289,
+                "Fraud": 1430,
+                "Cybercrime": 562,
+                "Drug-related": 313
+            },
+            "crime_percentage": {
+                "Theft": 24.28,
+                "Murder": 1.12,
+                "Assault": 37.17,
+                "Fraud": 23.22,
+                "Cybercrime": 9.13,
+                "Drug-related": 5.08
+            }
+        },
+        {
+            "year": 2008,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 4917,
+                "Murder": 23,
+                "Assault": 1526,
+                "Fraud": 1393,
+                "Cybercrime": 1417,
+                "Drug-related": 1133
+            },
+            "crime_percentage": {
+                "Theft": 47.24,
+                "Murder": 0.22,
+                "Assault": 14.66,
+                "Fraud": 13.38,
+                "Cybercrime": 13.61,
+                "Drug-related": 10.88
+            }
+        },
+        {
+            "year": 2008,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 2633,
+                "Murder": 102,
+                "Assault": 2847,
+                "Fraud": 1653,
+                "Cybercrime": 1314,
+                "Drug-related": 1933
+            },
+            "crime_percentage": {
+                "Theft": 25.12,
+                "Murder": 0.97,
+                "Assault": 27.16,
+                "Fraud": 15.77,
+                "Cybercrime": 12.54,
+                "Drug-related": 18.44
+            }
+        },
+        {
+            "year": 2008,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 3862,
+                "Murder": 214,
+                "Assault": 962,
+                "Fraud": 1851,
+                "Cybercrime": 108,
+                "Drug-related": 3880
+            },
+            "crime_percentage": {
+                "Theft": 35.51,
+                "Murder": 1.97,
+                "Assault": 8.84,
+                "Fraud": 17.02,
+                "Cybercrime": 0.99,
+                "Drug-related": 35.67
+            }
+        },
+        {
+            "year": 2008,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 4251,
+                "Murder": 255,
+                "Assault": 1995,
+                "Fraud": 438,
+                "Cybercrime": 872,
+                "Drug-related": 2825
+            },
+            "crime_percentage": {
+                "Theft": 39.97,
+                "Murder": 2.4,
+                "Assault": 18.76,
+                "Fraud": 4.12,
+                "Cybercrime": 8.2,
+                "Drug-related": 26.56
+            }
+        },
+        {
+            "year": 2009,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 4994,
+                "Murder": 121,
+                "Assault": 2366,
+                "Fraud": 504,
+                "Cybercrime": 137,
+                "Drug-related": 1392
+            },
+            "crime_percentage": {
+                "Theft": 52.49,
+                "Murder": 1.27,
+                "Assault": 24.87,
+                "Fraud": 5.3,
+                "Cybercrime": 1.44,
+                "Drug-related": 14.63
+            }
+        },
+        {
+            "year": 2009,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 3845,
+                "Murder": 278,
+                "Assault": 455,
+                "Fraud": 1823,
+                "Cybercrime": 295,
+                "Drug-related": 1343
+            },
+            "crime_percentage": {
+                "Theft": 47.83,
+                "Murder": 3.46,
+                "Assault": 5.66,
+                "Fraud": 22.68,
+                "Cybercrime": 3.67,
+                "Drug-related": 16.71
+            }
+        },
+        {
+            "year": 2009,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 2843,
+                "Murder": 192,
+                "Assault": 2408,
+                "Fraud": 1206,
+                "Cybercrime": 836,
+                "Drug-related": 3878
+            },
+            "crime_percentage": {
+                "Theft": 25.02,
+                "Murder": 1.69,
+                "Assault": 21.19,
+                "Fraud": 10.61,
+                "Cybercrime": 7.36,
+                "Drug-related": 34.13
+            }
+        },
+        {
+            "year": 2009,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 1884,
+                "Murder": 63,
+                "Assault": 1706,
+                "Fraud": 1562,
+                "Cybercrime": 386,
+                "Drug-related": 1267
+            },
+            "crime_percentage": {
+                "Theft": 27.43,
+                "Murder": 0.92,
+                "Assault": 24.84,
+                "Fraud": 22.74,
+                "Cybercrime": 5.62,
+                "Drug-related": 18.45
+            }
+        },
+        {
+            "year": 2009,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 1491,
+                "Murder": 246,
+                "Assault": 346,
+                "Fraud": 1084,
+                "Cybercrime": 1318,
+                "Drug-related": 2909
+            },
+            "crime_percentage": {
+                "Theft": 20.16,
+                "Murder": 3.33,
+                "Assault": 4.68,
+                "Fraud": 14.66,
+                "Cybercrime": 17.83,
+                "Drug-related": 39.34
+            }
+        },
+        {
+            "year": 2010,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 561,
+                "Murder": 208,
+                "Assault": 678,
+                "Fraud": 605,
+                "Cybercrime": 405,
+                "Drug-related": 3127
+            },
+            "crime_percentage": {
+                "Theft": 10.05,
+                "Murder": 3.72,
+                "Assault": 12.14,
+                "Fraud": 10.83,
+                "Cybercrime": 7.25,
+                "Drug-related": 56.0
+            }
+        },
+        {
+            "year": 2010,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 2040,
+                "Murder": 182,
+                "Assault": 2603,
+                "Fraud": 1657,
+                "Cybercrime": 622,
+                "Drug-related": 2830
+            },
+            "crime_percentage": {
+                "Theft": 20.54,
+                "Murder": 1.83,
+                "Assault": 26.2,
+                "Fraud": 16.68,
+                "Cybercrime": 6.26,
+                "Drug-related": 28.49
+            }
+        },
+        {
+            "year": 2010,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 2881,
+                "Murder": 23,
+                "Assault": 2577,
+                "Fraud": 1426,
+                "Cybercrime": 830,
+                "Drug-related": 3527
+            },
+            "crime_percentage": {
+                "Theft": 25.58,
+                "Murder": 0.2,
+                "Assault": 22.88,
+                "Fraud": 12.66,
+                "Cybercrime": 7.37,
+                "Drug-related": 31.31
+            }
+        },
+        {
+            "year": 2010,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 3704,
+                "Murder": 293,
+                "Assault": 788,
+                "Fraud": 1211,
+                "Cybercrime": 1244,
+                "Drug-related": 675
+            },
+            "crime_percentage": {
+                "Theft": 46.8,
+                "Murder": 3.7,
+                "Assault": 9.96,
+                "Fraud": 15.3,
+                "Cybercrime": 15.72,
+                "Drug-related": 8.53
+            }
+        },
+        {
+            "year": 2010,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 4353,
+                "Murder": 300,
+                "Assault": 1514,
+                "Fraud": 231,
+                "Cybercrime": 1280,
+                "Drug-related": 863
+            },
+            "crime_percentage": {
+                "Theft": 50.97,
+                "Murder": 3.51,
+                "Assault": 17.73,
+                "Fraud": 2.7,
+                "Cybercrime": 14.99,
+                "Drug-related": 10.1
+            }
+        },
+        {
+            "year": 2011,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 2122,
+                "Murder": 156,
+                "Assault": 2350,
+                "Fraud": 418,
+                "Cybercrime": 1207,
+                "Drug-related": 871
+            },
+            "crime_percentage": {
+                "Theft": 29.79,
+                "Murder": 2.19,
+                "Assault": 32.99,
+                "Fraud": 5.87,
+                "Cybercrime": 16.94,
+                "Drug-related": 12.23
+            }
+        },
+        {
+            "year": 2011,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 2986,
+                "Murder": 222,
+                "Assault": 2905,
+                "Fraud": 1427,
+                "Cybercrime": 1482,
+                "Drug-related": 1802
+            },
+            "crime_percentage": {
+                "Theft": 27.59,
+                "Murder": 2.05,
+                "Assault": 26.84,
+                "Fraud": 13.18,
+                "Cybercrime": 13.69,
+                "Drug-related": 16.65
+            }
+        },
+        {
+            "year": 2011,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 1762,
+                "Murder": 94,
+                "Assault": 1289,
+                "Fraud": 401,
+                "Cybercrime": 713,
+                "Drug-related": 819
+            },
+            "crime_percentage": {
+                "Theft": 34.7,
+                "Murder": 1.85,
+                "Assault": 25.38,
+                "Fraud": 7.9,
+                "Cybercrime": 14.04,
+                "Drug-related": 16.13
+            }
+        },
+        {
+            "year": 2011,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 2815,
+                "Murder": 68,
+                "Assault": 1380,
+                "Fraud": 395,
+                "Cybercrime": 605,
+                "Drug-related": 2069
+            },
+            "crime_percentage": {
+                "Theft": 38.39,
+                "Murder": 0.93,
+                "Assault": 18.82,
+                "Fraud": 5.39,
+                "Cybercrime": 8.25,
+                "Drug-related": 28.22
+            }
+        },
+        {
+            "year": 2011,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 3824,
+                "Murder": 29,
+                "Assault": 658,
+                "Fraud": 1166,
+                "Cybercrime": 1333,
+                "Drug-related": 2948
+            },
+            "crime_percentage": {
+                "Theft": 38.4,
+                "Murder": 0.29,
+                "Assault": 6.61,
+                "Fraud": 11.71,
+                "Cybercrime": 13.39,
+                "Drug-related": 29.6
+            }
+        },
+        {
+            "year": 2012,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 2289,
+                "Murder": 118,
+                "Assault": 2121,
+                "Fraud": 463,
+                "Cybercrime": 1036,
+                "Drug-related": 1603
+            },
+            "crime_percentage": {
+                "Theft": 30.0,
+                "Murder": 1.55,
+                "Assault": 27.8,
+                "Fraud": 6.07,
+                "Cybercrime": 13.58,
+                "Drug-related": 21.01
+            }
+        },
+        {
+            "year": 2012,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 823,
+                "Murder": 44,
+                "Assault": 2060,
+                "Fraud": 1237,
+                "Cybercrime": 108,
+                "Drug-related": 3685
+            },
+            "crime_percentage": {
+                "Theft": 10.34,
+                "Murder": 0.55,
+                "Assault": 25.89,
+                "Fraud": 15.55,
+                "Cybercrime": 1.36,
+                "Drug-related": 46.31
+            }
+        },
+        {
+            "year": 2012,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 3033,
+                "Murder": 70,
+                "Assault": 1105,
+                "Fraud": 1521,
+                "Cybercrime": 1216,
+                "Drug-related": 893
+            },
+            "crime_percentage": {
+                "Theft": 38.7,
+                "Murder": 0.89,
+                "Assault": 14.1,
+                "Fraud": 19.41,
+                "Cybercrime": 15.51,
+                "Drug-related": 11.39
+            }
+        },
+        {
+            "year": 2012,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 2776,
+                "Murder": 149,
+                "Assault": 2613,
+                "Fraud": 1387,
+                "Cybercrime": 571,
+                "Drug-related": 3726
+            },
+            "crime_percentage": {
+                "Theft": 24.74,
+                "Murder": 1.33,
+                "Assault": 23.28,
+                "Fraud": 12.36,
+                "Cybercrime": 5.09,
+                "Drug-related": 33.2
+            }
+        },
+        {
+            "year": 2012,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 4819,
+                "Murder": 115,
+                "Assault": 731,
+                "Fraud": 1890,
+                "Cybercrime": 1369,
+                "Drug-related": 1200
+            },
+            "crime_percentage": {
+                "Theft": 47.6,
+                "Murder": 1.14,
+                "Assault": 7.22,
+                "Fraud": 18.67,
+                "Cybercrime": 13.52,
+                "Drug-related": 11.85
+            }
+        },
+        {
+            "year": 2013,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 2188,
+                "Murder": 107,
+                "Assault": 2946,
+                "Fraud": 1174,
+                "Cybercrime": 946,
+                "Drug-related": 3306
+            },
+            "crime_percentage": {
+                "Theft": 20.51,
+                "Murder": 1.0,
+                "Assault": 27.62,
+                "Fraud": 11.01,
+                "Cybercrime": 8.87,
+                "Drug-related": 30.99
+            }
+        },
+        {
+            "year": 2013,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 2143,
+                "Murder": 126,
+                "Assault": 560,
+                "Fraud": 955,
+                "Cybercrime": 382,
+                "Drug-related": 548
+            },
+            "crime_percentage": {
+                "Theft": 45.46,
+                "Murder": 2.67,
+                "Assault": 11.88,
+                "Fraud": 20.26,
+                "Cybercrime": 8.1,
+                "Drug-related": 11.62
+            }
+        },
+        {
+            "year": 2013,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 3152,
+                "Murder": 182,
+                "Assault": 2040,
+                "Fraud": 1081,
+                "Cybercrime": 805,
+                "Drug-related": 3298
+            },
+            "crime_percentage": {
+                "Theft": 29.85,
+                "Murder": 1.72,
+                "Assault": 19.32,
+                "Fraud": 10.24,
+                "Cybercrime": 7.62,
+                "Drug-related": 31.24
+            }
+        },
+        {
+            "year": 2013,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 3199,
+                "Murder": 289,
+                "Assault": 1573,
+                "Fraud": 760,
+                "Cybercrime": 639,
+                "Drug-related": 2092
+            },
+            "crime_percentage": {
+                "Theft": 37.41,
+                "Murder": 3.38,
+                "Assault": 18.39,
+                "Fraud": 8.89,
+                "Cybercrime": 7.47,
+                "Drug-related": 24.46
+            }
+        },
+        {
+            "year": 2013,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 1469,
+                "Murder": 293,
+                "Assault": 953,
+                "Fraud": 1850,
+                "Cybercrime": 778,
+                "Drug-related": 1539
+            },
+            "crime_percentage": {
+                "Theft": 21.35,
+                "Murder": 4.26,
+                "Assault": 13.85,
+                "Fraud": 26.88,
+                "Cybercrime": 11.3,
+                "Drug-related": 22.36
+            }
+        },
+        {
+            "year": 2014,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 2158,
+                "Murder": 170,
+                "Assault": 290,
+                "Fraud": 791,
+                "Cybercrime": 351,
+                "Drug-related": 1180
+            },
+            "crime_percentage": {
+                "Theft": 43.68,
+                "Murder": 3.44,
+                "Assault": 5.87,
+                "Fraud": 16.01,
+                "Cybercrime": 7.11,
+                "Drug-related": 23.89
+            }
+        },
+        {
+            "year": 2014,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 4681,
+                "Murder": 19,
+                "Assault": 1885,
+                "Fraud": 511,
+                "Cybercrime": 773,
+                "Drug-related": 3986
+            },
+            "crime_percentage": {
+                "Theft": 39.49,
+                "Murder": 0.16,
+                "Assault": 15.9,
+                "Fraud": 4.31,
+                "Cybercrime": 6.52,
+                "Drug-related": 33.62
+            }
+        },
+        {
+            "year": 2014,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 2433,
+                "Murder": 130,
+                "Assault": 305,
+                "Fraud": 1636,
+                "Cybercrime": 783,
+                "Drug-related": 886
+            },
+            "crime_percentage": {
+                "Theft": 39.41,
+                "Murder": 2.11,
+                "Assault": 4.94,
+                "Fraud": 26.5,
+                "Cybercrime": 12.68,
+                "Drug-related": 14.35
+            }
+        },
+        {
+            "year": 2014,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 2467,
+                "Murder": 256,
+                "Assault": 1050,
+                "Fraud": 711,
+                "Cybercrime": 447,
+                "Drug-related": 396
+            },
+            "crime_percentage": {
+                "Theft": 46.31,
+                "Murder": 4.81,
+                "Assault": 19.71,
+                "Fraud": 13.35,
+                "Cybercrime": 8.39,
+                "Drug-related": 7.43
+            }
+        },
+        {
+            "year": 2014,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 816,
+                "Murder": 158,
+                "Assault": 1959,
+                "Fraud": 1021,
+                "Cybercrime": 1125,
+                "Drug-related": 3708
+            },
+            "crime_percentage": {
+                "Theft": 9.29,
+                "Murder": 1.8,
+                "Assault": 22.29,
+                "Fraud": 11.62,
+                "Cybercrime": 12.8,
+                "Drug-related": 42.2
+            }
+        },
+        {
+            "year": 2015,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 4082,
+                "Murder": 87,
+                "Assault": 1094,
+                "Fraud": 686,
+                "Cybercrime": 1361,
+                "Drug-related": 1809
+            },
+            "crime_percentage": {
+                "Theft": 44.76,
+                "Murder": 0.95,
+                "Assault": 12.0,
+                "Fraud": 7.52,
+                "Cybercrime": 14.92,
+                "Drug-related": 19.84
+            }
+        },
+        {
+            "year": 2015,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 2651,
+                "Murder": 272,
+                "Assault": 2989,
+                "Fraud": 1266,
+                "Cybercrime": 349,
+                "Drug-related": 1781
+            },
+            "crime_percentage": {
+                "Theft": 28.48,
+                "Murder": 2.92,
+                "Assault": 32.11,
+                "Fraud": 13.6,
+                "Cybercrime": 3.75,
+                "Drug-related": 19.13
+            }
+        },
+        {
+            "year": 2015,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 3032,
+                "Murder": 178,
+                "Assault": 1261,
+                "Fraud": 950,
+                "Cybercrime": 115,
+                "Drug-related": 3926
+            },
+            "crime_percentage": {
+                "Theft": 32.04,
+                "Murder": 1.88,
+                "Assault": 13.33,
+                "Fraud": 10.04,
+                "Cybercrime": 1.22,
+                "Drug-related": 41.49
+            }
+        },
+        {
+            "year": 2015,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 550,
+                "Murder": 195,
+                "Assault": 1526,
+                "Fraud": 1924,
+                "Cybercrime": 1363,
+                "Drug-related": 1742
+            },
+            "crime_percentage": {
+                "Theft": 7.53,
+                "Murder": 2.67,
+                "Assault": 20.9,
+                "Fraud": 26.36,
+                "Cybercrime": 18.67,
+                "Drug-related": 23.86
+            }
+        },
+        {
+            "year": 2015,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 2186,
+                "Murder": 35,
+                "Assault": 2817,
+                "Fraud": 1885,
+                "Cybercrime": 493,
+                "Drug-related": 3567
+            },
+            "crime_percentage": {
+                "Theft": 19.9,
+                "Murder": 0.32,
+                "Assault": 25.65,
+                "Fraud": 17.16,
+                "Cybercrime": 4.49,
+                "Drug-related": 32.48
+            }
+        },
+        {
+            "year": 2016,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 2807,
+                "Murder": 86,
+                "Assault": 2835,
+                "Fraud": 1074,
+                "Cybercrime": 1400,
+                "Drug-related": 3994
+            },
+            "crime_percentage": {
+                "Theft": 23.02,
+                "Murder": 0.71,
+                "Assault": 23.25,
+                "Fraud": 8.81,
+                "Cybercrime": 11.48,
+                "Drug-related": 32.75
+            }
+        },
+        {
+            "year": 2016,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 2505,
+                "Murder": 94,
+                "Assault": 1865,
+                "Fraud": 1464,
+                "Cybercrime": 307,
+                "Drug-related": 2004
+            },
+            "crime_percentage": {
+                "Theft": 30.4,
+                "Murder": 1.14,
+                "Assault": 22.64,
+                "Fraud": 17.77,
+                "Cybercrime": 3.73,
+                "Drug-related": 24.32
+            }
+        },
+        {
+            "year": 2016,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 3202,
+                "Murder": 37,
+                "Assault": 2875,
+                "Fraud": 954,
+                "Cybercrime": 287,
+                "Drug-related": 3887
+            },
+            "crime_percentage": {
+                "Theft": 28.48,
+                "Murder": 0.33,
+                "Assault": 25.57,
+                "Fraud": 8.49,
+                "Cybercrime": 2.55,
+                "Drug-related": 34.58
+            }
+        },
+        {
+            "year": 2016,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 4252,
+                "Murder": 178,
+                "Assault": 1053,
+                "Fraud": 1796,
+                "Cybercrime": 367,
+                "Drug-related": 3681
+            },
+            "crime_percentage": {
+                "Theft": 37.54,
+                "Murder": 1.57,
+                "Assault": 9.3,
+                "Fraud": 15.86,
+                "Cybercrime": 3.24,
+                "Drug-related": 32.5
+            }
+        },
+        {
+            "year": 2016,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 4954,
+                "Murder": 29,
+                "Assault": 1818,
+                "Fraud": 551,
+                "Cybercrime": 260,
+                "Drug-related": 3177
+            },
+            "crime_percentage": {
+                "Theft": 45.92,
+                "Murder": 0.27,
+                "Assault": 16.85,
+                "Fraud": 5.11,
+                "Cybercrime": 2.41,
+                "Drug-related": 29.45
+            }
+        },
+        {
+            "year": 2017,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 1501,
+                "Murder": 71,
+                "Assault": 2150,
+                "Fraud": 938,
+                "Cybercrime": 519,
+                "Drug-related": 423
+            },
+            "crime_percentage": {
+                "Theft": 26.79,
+                "Murder": 1.27,
+                "Assault": 38.38,
+                "Fraud": 16.74,
+                "Cybercrime": 9.26,
+                "Drug-related": 7.55
+            }
+        },
+        {
+            "year": 2017,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 3820,
+                "Murder": 21,
+                "Assault": 1273,
+                "Fraud": 1085,
+                "Cybercrime": 783,
+                "Drug-related": 2607
+            },
+            "crime_percentage": {
+                "Theft": 39.84,
+                "Murder": 0.22,
+                "Assault": 13.28,
+                "Fraud": 11.32,
+                "Cybercrime": 8.17,
+                "Drug-related": 27.19
+            }
+        },
+        {
+            "year": 2017,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 1737,
+                "Murder": 36,
+                "Assault": 2468,
+                "Fraud": 640,
+                "Cybercrime": 103,
+                "Drug-related": 3527
+            },
+            "crime_percentage": {
+                "Theft": 20.41,
+                "Murder": 0.42,
+                "Assault": 29.0,
+                "Fraud": 7.52,
+                "Cybercrime": 1.21,
+                "Drug-related": 41.44
+            }
+        },
+        {
+            "year": 2017,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 2677,
+                "Murder": 166,
+                "Assault": 204,
+                "Fraud": 1393,
+                "Cybercrime": 62,
+                "Drug-related": 423
+            },
+            "crime_percentage": {
+                "Theft": 54.36,
+                "Murder": 3.37,
+                "Assault": 4.14,
+                "Fraud": 28.28,
+                "Cybercrime": 1.26,
+                "Drug-related": 8.59
+            }
+        },
+        {
+            "year": 2017,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 518,
+                "Murder": 11,
+                "Assault": 2518,
+                "Fraud": 522,
+                "Cybercrime": 365,
+                "Drug-related": 3610
+            },
+            "crime_percentage": {
+                "Theft": 6.87,
+                "Murder": 0.15,
+                "Assault": 33.38,
+                "Fraud": 6.92,
+                "Cybercrime": 4.84,
+                "Drug-related": 47.85
+            }
+        },
+        {
+            "year": 2018,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 3650,
+                "Murder": 24,
+                "Assault": 465,
+                "Fraud": 366,
+                "Cybercrime": 1343,
+                "Drug-related": 528
+            },
+            "crime_percentage": {
+                "Theft": 57.25,
+                "Murder": 0.38,
+                "Assault": 7.29,
+                "Fraud": 5.74,
+                "Cybercrime": 21.06,
+                "Drug-related": 8.28
+            }
+        },
+        {
+            "year": 2018,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 4095,
+                "Murder": 128,
+                "Assault": 1014,
+                "Fraud": 1752,
+                "Cybercrime": 1168,
+                "Drug-related": 875
+            },
+            "crime_percentage": {
+                "Theft": 45.34,
+                "Murder": 1.42,
+                "Assault": 11.23,
+                "Fraud": 19.4,
+                "Cybercrime": 12.93,
+                "Drug-related": 9.69
+            }
+        },
+        {
+            "year": 2018,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 2493,
+                "Murder": 190,
+                "Assault": 2227,
+                "Fraud": 1880,
+                "Cybercrime": 1072,
+                "Drug-related": 2735
+            },
+            "crime_percentage": {
+                "Theft": 23.53,
+                "Murder": 1.79,
+                "Assault": 21.02,
+                "Fraud": 17.74,
+                "Cybercrime": 10.12,
+                "Drug-related": 25.81
+            }
+        },
+        {
+            "year": 2018,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 3476,
+                "Murder": 239,
+                "Assault": 1438,
+                "Fraud": 1447,
+                "Cybercrime": 103,
+                "Drug-related": 3134
+            },
+            "crime_percentage": {
+                "Theft": 35.34,
+                "Murder": 2.43,
+                "Assault": 14.62,
+                "Fraud": 14.71,
+                "Cybercrime": 1.05,
+                "Drug-related": 31.86
+            }
+        },
+        {
+            "year": 2018,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 3618,
+                "Murder": 133,
+                "Assault": 2629,
+                "Fraud": 598,
+                "Cybercrime": 819,
+                "Drug-related": 1122
+            },
+            "crime_percentage": {
+                "Theft": 40.57,
+                "Murder": 1.49,
+                "Assault": 29.48,
+                "Fraud": 6.7,
+                "Cybercrime": 9.18,
+                "Drug-related": 12.58
+            }
+        },
+        {
+            "year": 2019,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 4469,
+                "Murder": 152,
+                "Assault": 1196,
+                "Fraud": 1087,
+                "Cybercrime": 989,
+                "Drug-related": 1930
+            },
+            "crime_percentage": {
+                "Theft": 45.5,
+                "Murder": 1.55,
+                "Assault": 12.18,
+                "Fraud": 11.07,
+                "Cybercrime": 10.07,
+                "Drug-related": 19.65
+            }
+        },
+        {
+            "year": 2019,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 1170,
+                "Murder": 202,
+                "Assault": 2409,
+                "Fraud": 1155,
+                "Cybercrime": 356,
+                "Drug-related": 2091
+            },
+            "crime_percentage": {
+                "Theft": 15.85,
+                "Murder": 2.74,
+                "Assault": 32.63,
+                "Fraud": 15.64,
+                "Cybercrime": 4.82,
+                "Drug-related": 28.32
+            }
+        },
+        {
+            "year": 2019,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 573,
+                "Murder": 123,
+                "Assault": 272,
+                "Fraud": 431,
+                "Cybercrime": 680,
+                "Drug-related": 3783
+            },
+            "crime_percentage": {
+                "Theft": 9.77,
+                "Murder": 2.1,
+                "Assault": 4.64,
+                "Fraud": 7.35,
+                "Cybercrime": 11.6,
+                "Drug-related": 64.53
+            }
+        },
+        {
+            "year": 2019,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 3832,
+                "Murder": 210,
+                "Assault": 2069,
+                "Fraud": 1858,
+                "Cybercrime": 1226,
+                "Drug-related": 2189
+            },
+            "crime_percentage": {
+                "Theft": 33.66,
+                "Murder": 1.84,
+                "Assault": 18.17,
+                "Fraud": 16.32,
+                "Cybercrime": 10.77,
+                "Drug-related": 19.23
+            }
+        },
+        {
+            "year": 2019,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 3120,
+                "Murder": 31,
+                "Assault": 1288,
+                "Fraud": 742,
+                "Cybercrime": 1345,
+                "Drug-related": 335
+            },
+            "crime_percentage": {
+                "Theft": 45.47,
+                "Murder": 0.45,
+                "Assault": 18.77,
+                "Fraud": 10.81,
+                "Cybercrime": 19.6,
+                "Drug-related": 4.88
+            }
+        },
+        {
+            "year": 2020,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 2909,
+                "Murder": 147,
+                "Assault": 1647,
+                "Fraud": 1381,
+                "Cybercrime": 1005,
+                "Drug-related": 3168
+            },
+            "crime_percentage": {
+                "Theft": 28.36,
+                "Murder": 1.43,
+                "Assault": 16.06,
+                "Fraud": 13.46,
+                "Cybercrime": 9.8,
+                "Drug-related": 30.89
+            }
+        },
+        {
+            "year": 2020,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 3438,
+                "Murder": 169,
+                "Assault": 2657,
+                "Fraud": 1241,
+                "Cybercrime": 1390,
+                "Drug-related": 2118
+            },
+            "crime_percentage": {
+                "Theft": 31.22,
+                "Murder": 1.53,
+                "Assault": 24.13,
+                "Fraud": 11.27,
+                "Cybercrime": 12.62,
+                "Drug-related": 19.23
+            }
+        },
+        {
+            "year": 2020,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 4034,
+                "Murder": 174,
+                "Assault": 2863,
+                "Fraud": 383,
+                "Cybercrime": 880,
+                "Drug-related": 1516
+            },
+            "crime_percentage": {
+                "Theft": 40.95,
+                "Murder": 1.77,
+                "Assault": 29.07,
+                "Fraud": 3.89,
+                "Cybercrime": 8.93,
+                "Drug-related": 15.39
+            }
+        },
+        {
+            "year": 2020,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 3379,
+                "Murder": 253,
+                "Assault": 476,
+                "Fraud": 751,
+                "Cybercrime": 425,
+                "Drug-related": 1400
+            },
+            "crime_percentage": {
+                "Theft": 50.55,
+                "Murder": 3.79,
+                "Assault": 7.12,
+                "Fraud": 11.24,
+                "Cybercrime": 6.36,
+                "Drug-related": 20.95
+            }
+        },
+        {
+            "year": 2020,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 4311,
+                "Murder": 118,
+                "Assault": 1389,
+                "Fraud": 1259,
+                "Cybercrime": 1174,
+                "Drug-related": 3306
+            },
+            "crime_percentage": {
+                "Theft": 37.3,
+                "Murder": 1.02,
+                "Assault": 12.02,
+                "Fraud": 10.89,
+                "Cybercrime": 10.16,
+                "Drug-related": 28.61
+            }
+        },
+        {
+            "year": 2021,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 3055,
+                "Murder": 96,
+                "Assault": 2286,
+                "Fraud": 1276,
+                "Cybercrime": 643,
+                "Drug-related": 2697
+            },
+            "crime_percentage": {
+                "Theft": 30.39,
+                "Murder": 0.95,
+                "Assault": 22.74,
+                "Fraud": 12.69,
+                "Cybercrime": 6.4,
+                "Drug-related": 26.83
+            }
+        },
+        {
+            "year": 2021,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 2189,
+                "Murder": 228,
+                "Assault": 424,
+                "Fraud": 249,
+                "Cybercrime": 865,
+                "Drug-related": 2590
+            },
+            "crime_percentage": {
+                "Theft": 33.45,
+                "Murder": 3.48,
+                "Assault": 6.48,
+                "Fraud": 3.8,
+                "Cybercrime": 13.22,
+                "Drug-related": 39.57
+            }
+        },
+        {
+            "year": 2021,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 4328,
+                "Murder": 165,
+                "Assault": 1784,
+                "Fraud": 1509,
+                "Cybercrime": 1228,
+                "Drug-related": 2151
+            },
+            "crime_percentage": {
+                "Theft": 38.76,
+                "Murder": 1.48,
+                "Assault": 15.98,
+                "Fraud": 13.52,
+                "Cybercrime": 11.0,
+                "Drug-related": 19.27
+            }
+        },
+        {
+            "year": 2021,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 1579,
+                "Murder": 87,
+                "Assault": 1156,
+                "Fraud": 1301,
+                "Cybercrime": 495,
+                "Drug-related": 883
+            },
+            "crime_percentage": {
+                "Theft": 28.7,
+                "Murder": 1.58,
+                "Assault": 21.01,
+                "Fraud": 23.65,
+                "Cybercrime": 9.0,
+                "Drug-related": 16.05
+            }
+        },
+        {
+            "year": 2021,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 3716,
+                "Murder": 82,
+                "Assault": 214,
+                "Fraud": 859,
+                "Cybercrime": 960,
+                "Drug-related": 1542
+            },
+            "crime_percentage": {
+                "Theft": 50.4,
+                "Murder": 1.11,
+                "Assault": 2.9,
+                "Fraud": 11.65,
+                "Cybercrime": 13.02,
+                "Drug-related": 20.91
+            }
+        },
+        {
+            "year": 2022,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 3949,
+                "Murder": 169,
+                "Assault": 1209,
+                "Fraud": 1789,
+                "Cybercrime": 996,
+                "Drug-related": 3558
+            },
+            "crime_percentage": {
+                "Theft": 33.84,
+                "Murder": 1.45,
+                "Assault": 10.36,
+                "Fraud": 15.33,
+                "Cybercrime": 8.53,
+                "Drug-related": 30.49
+            }
+        },
+        {
+            "year": 2022,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 3824,
+                "Murder": 146,
+                "Assault": 2348,
+                "Fraud": 1686,
+                "Cybercrime": 1489,
+                "Drug-related": 3690
+            },
+            "crime_percentage": {
+                "Theft": 29.01,
+                "Murder": 1.11,
+                "Assault": 17.81,
+                "Fraud": 12.79,
+                "Cybercrime": 11.29,
+                "Drug-related": 27.99
+            }
+        },
+        {
+            "year": 2022,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 3662,
+                "Murder": 29,
+                "Assault": 1936,
+                "Fraud": 305,
+                "Cybercrime": 1095,
+                "Drug-related": 2576
+            },
+            "crime_percentage": {
+                "Theft": 38.13,
+                "Murder": 0.3,
+                "Assault": 20.16,
+                "Fraud": 3.18,
+                "Cybercrime": 11.4,
+                "Drug-related": 26.82
+            }
+        },
+        {
+            "year": 2022,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 4335,
+                "Murder": 78,
+                "Assault": 2237,
+                "Fraud": 903,
+                "Cybercrime": 843,
+                "Drug-related": 1064
+            },
+            "crime_percentage": {
+                "Theft": 45.82,
+                "Murder": 0.82,
+                "Assault": 23.65,
+                "Fraud": 9.55,
+                "Cybercrime": 8.91,
+                "Drug-related": 11.25
+            }
+        },
+        {
+            "year": 2022,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 1843,
+                "Murder": 196,
+                "Assault": 2756,
+                "Fraud": 1440,
+                "Cybercrime": 667,
+                "Drug-related": 1263
+            },
+            "crime_percentage": {
+                "Theft": 22.57,
+                "Murder": 2.4,
+                "Assault": 33.75,
+                "Fraud": 17.64,
+                "Cybercrime": 8.17,
+                "Drug-related": 15.47
+            }
+        },
+        {
+            "year": 2023,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 2950,
+                "Murder": 246,
+                "Assault": 2572,
+                "Fraud": 246,
+                "Cybercrime": 1042,
+                "Drug-related": 3500
+            },
+            "crime_percentage": {
+                "Theft": 27.95,
+                "Murder": 2.33,
+                "Assault": 24.37,
+                "Fraud": 2.33,
+                "Cybercrime": 9.87,
+                "Drug-related": 33.16
+            }
+        },
+        {
+            "year": 2023,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 3967,
+                "Murder": 156,
+                "Assault": 492,
+                "Fraud": 1965,
+                "Cybercrime": 1331,
+                "Drug-related": 2506
+            },
+            "crime_percentage": {
+                "Theft": 38.08,
+                "Murder": 1.5,
+                "Assault": 4.72,
+                "Fraud": 18.86,
+                "Cybercrime": 12.78,
+                "Drug-related": 24.06
+            }
+        },
+        {
+            "year": 2023,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 1173,
+                "Murder": 20,
+                "Assault": 1718,
+                "Fraud": 1144,
+                "Cybercrime": 604,
+                "Drug-related": 974
+            },
+            "crime_percentage": {
+                "Theft": 20.82,
+                "Murder": 0.36,
+                "Assault": 30.5,
+                "Fraud": 20.31,
+                "Cybercrime": 10.72,
+                "Drug-related": 17.29
+            }
+        },
+        {
+            "year": 2023,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 3542,
+                "Murder": 126,
+                "Assault": 1410,
+                "Fraud": 740,
+                "Cybercrime": 795,
+                "Drug-related": 3079
+            },
+            "crime_percentage": {
+                "Theft": 36.55,
+                "Murder": 1.3,
+                "Assault": 14.55,
+                "Fraud": 7.64,
+                "Cybercrime": 8.2,
+                "Drug-related": 31.77
+            }
+        },
+        {
+            "year": 2023,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 3606,
+                "Murder": 263,
+                "Assault": 1477,
+                "Fraud": 1064,
+                "Cybercrime": 880,
+                "Drug-related": 3057
+            },
+            "crime_percentage": {
+                "Theft": 34.85,
+                "Murder": 2.54,
+                "Assault": 14.27,
+                "Fraud": 10.28,
+                "Cybercrime": 8.5,
+                "Drug-related": 29.54
+            }
+        },
+        {
+            "year": 2024,
+            "city": "New York",
+            "crime_counts": {
+                "Theft": 2214,
+                "Murder": 164,
+                "Assault": 1462,
+                "Fraud": 1830,
+                "Cybercrime": 879,
+                "Drug-related": 3235
+            },
+            "crime_percentage": {
+                "Theft": 22.63,
+                "Murder": 1.68,
+                "Assault": 14.94,
+                "Fraud": 18.7,
+                "Cybercrime": 8.98,
+                "Drug-related": 33.06
+            }
+        },
+        {
+            "year": 2024,
+            "city": "Los Angeles",
+            "crime_counts": {
+                "Theft": 1032,
+                "Murder": 49,
+                "Assault": 734,
+                "Fraud": 1671,
+                "Cybercrime": 801,
+                "Drug-related": 2729
+            },
+            "crime_percentage": {
+                "Theft": 14.71,
+                "Murder": 0.7,
+                "Assault": 10.46,
+                "Fraud": 23.82,
+                "Cybercrime": 11.42,
+                "Drug-related": 38.9
+            }
+        },
+        {
+            "year": 2024,
+            "city": "Chicago",
+            "crime_counts": {
+                "Theft": 2796,
+                "Murder": 67,
+                "Assault": 655,
+                "Fraud": 410,
+                "Cybercrime": 1333,
+                "Drug-related": 987
+            },
+            "crime_percentage": {
+                "Theft": 44.75,
+                "Murder": 1.07,
+                "Assault": 10.48,
+                "Fraud": 6.56,
+                "Cybercrime": 21.33,
+                "Drug-related": 15.8
+            }
+        },
+        {
+            "year": 2024,
+            "city": "Houston",
+            "crime_counts": {
+                "Theft": 1708,
+                "Murder": 22,
+                "Assault": 1703,
+                "Fraud": 1291,
+                "Cybercrime": 808,
+                "Drug-related": 2646
+            },
+            "crime_percentage": {
+                "Theft": 20.89,
+                "Murder": 0.27,
+                "Assault": 20.82,
+                "Fraud": 15.79,
+                "Cybercrime": 9.88,
+                "Drug-related": 32.36
+            }
+        },
+        {
+            "year": 2024,
+            "city": "Miami",
+            "crime_counts": {
+                "Theft": 1148,
+                "Murder": 126,
+                "Assault": 2598,
+                "Fraud": 903,
+                "Cybercrime": 1242,
+                "Drug-related": 313
+            },
+            "crime_percentage": {
+                "Theft": 18.14,
+                "Murder": 1.99,
+                "Assault": 41.04,
+                "Fraud": 14.27,
+                "Cybercrime": 19.62,
+                "Drug-related": 4.94
+            }
+        }
+    ]
+}

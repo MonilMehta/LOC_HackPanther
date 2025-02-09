@@ -1,0 +1,188 @@
+[
+    {
+      "year": 2024,
+      "predicted_crime": 1200,
+      "safety_index": 78.0,
+      "crime_reduction_rate": -5.0
+    },
+    {
+      "year": 2024,
+      "predicted_crime": 1178,
+      "safety_index": 78.4,
+      "crime_reduction_rate": -5.2
+    },
+    {
+      "year": 2024,
+      "predicted_crime": 1156,
+      "safety_index": 78.9,
+      "crime_reduction_rate": -5.4
+    },
+    {
+      "year": 2024,
+      "predicted_crime": 1134,
+      "safety_index": 79.3,
+      "crime_reduction_rate": -5.6
+    },
+    {
+      "year": 2024,
+      "predicted_crime": 1112,
+      "safety_index": 79.8,
+      "crime_reduction_rate": -5.8
+    },
+    {
+      "year": 2025,
+      "predicted_crime": 1089,
+      "safety_index": 80.2,
+      "crime_reduction_rate": -6.0
+    },
+    {
+      "year": 2025,
+      "predicted_crime": 1067,
+      "safety_index": 80.7,
+      "crime_reduction_rate": -6.2
+    },
+    {
+      "year": 2025,
+      "predicted_crime": 1045,
+      "safety_index": 81.1,
+      "crime_reduction_rate": -6.4
+    },
+    {
+      "year": 2025,
+      "predicted_crime": 1023,
+      "safety_index": 81.6,
+      "crime_reduction_rate": -6.6
+    },
+    {
+      "year": 2025,
+      "predicted_crime": 1001,
+      "safety_index": 82.0,
+      "crime_reduction_rate": -6.8
+    },{
+        "year": 2024,
+        "predicted_crime": 1200,
+        "safety_index": 78.0,
+        "crime_reduction_rate": -5.0
+      },
+      {
+        "year": 2024,
+        "predicted_crime": 1187,
+        "safety_index": 78.5,
+        "crime_reduction_rate": -4.8
+      },
+      {
+        "year": 2024,
+        "predicted_crime": 1195,
+        "safety_index": 77.9,
+        "crime_reduction_rate": -4.2
+      },
+      {
+        "year": 2025,
+        "predicted_crime": 1150,
+        "safety_index": 79.2,
+        "crime_reduction_rate": -6.1
+      },
+      {
+        "year": 2025,
+        "predicted_crime": 1142,
+        "safety_index": 79.8,
+        "crime_reduction_rate": -6.5
+      },
+      {
+        "year": 2025,
+        "predicted_crime": 1138,
+        "safety_index": 80.1,
+        "crime_reduction_rate": -6.8
+      },
+      {
+        "year": 2026,
+        "predicted_crime": 1080,
+        "safety_index": 82.3,
+        "crime_reduction_rate": -8.2
+      },
+      {
+        "year": 2026,
+        "predicted_crime": 1095,
+        "safety_index": 81.9,
+        "crime_reduction_rate": -7.8
+      },
+      {
+        "year": 2026,
+        "predicted_crime": 1072,
+        "safety_index": 82.7,
+        "crime_reduction_rate": -8.5
+      },
+      {
+        "year": 2027,
+        "predicted_crime": 985,
+        "safety_index": 84.6,
+        "crime_reduction_rate": -9.8
+      },
+      {
+        "year": 2027,
+        "predicted_crime": 992,
+        "safety_index": 84.2,
+        "crime_reduction_rate": -9.5
+      },
+      {
+        "year": 2027,
+        "predicted_crime": 978,
+        "safety_index": 84.9,
+        "crime_reduction_rate": -10.1
+      },
+      {
+        "year": 2028,
+        "predicted_crime": 925,
+        "safety_index": 86.4,
+        "crime_reduction_rate": -11.2
+      },
+      {
+        "year": 2028,
+        "predicted_crime": 932,
+        "safety_index": 86.1,
+        "crime_reduction_rate": -11.0
+      },
+      {
+        "year": 2028,
+        "predicted_crime": 918,
+        "safety_index": 86.8,
+        "crime_reduction_rate": -11.5
+      },
+      {
+        "year": 2029,
+        "predicted_crime": 875,
+        "safety_index": 88.2,
+        "crime_reduction_rate": -12.4
+      },
+      {
+        "year": 2029,
+        "predicted_crime": 882,
+        "safety_index": 87.9,
+        "crime_reduction_rate": -12.1
+      },
+      {
+        "year": 2029,
+        "predicted_crime": 868,
+        "safety_index": 88.6,
+        "crime_reduction_rate": -12.8
+      },
+      {
+        "year": 2030,
+        "predicted_crime": 845,
+        "safety_index": 89.5,
+        "crime_reduction_rate": -13.2
+      },
+      {
+        "year": 2030,
+        "predicted_crime": 852,
+        "safety_index": 89.2,
+        "crime_reduction_rate": -13.0
+      },
+      {
+        "year": 2030,
+        "predicted_crime": 838,
+        "safety_index": 89.9,
+        "crime_reduction_rate": -13.5
+      }
+      
+  ]
