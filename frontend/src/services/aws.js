@@ -7,14 +7,11 @@ let credentials = {
   accessKeyId,
   secretAccessKey,
 };
-const folder = "loc7";
-const region = "eu-north-1";
-const bucket = "milanh";
+
 const client = new S3Client({
   region: region,
   credentials: credentials,
 });
-
 
 const AWSHelper = {
     upload: async function(file, userName) {

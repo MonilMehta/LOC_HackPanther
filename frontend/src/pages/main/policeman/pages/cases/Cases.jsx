@@ -12,6 +12,7 @@ const Cases = () => {
         <Route index element={<CaseOverview />} />
         <Route path="details" element={<CaseDetails />} />
         <Route path="action" element={<CaseAction />} />
+        
       </Routes>
     </div>
   );

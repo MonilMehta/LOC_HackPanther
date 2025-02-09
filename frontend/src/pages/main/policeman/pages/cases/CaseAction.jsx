@@ -8,6 +8,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Loader2 } from 'lucide-react';
 import { Cookies } from 'react-cookie';
+import { useLocation } from 'react-router-dom';
 
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
@@ -26,6 +27,23 @@ const CaseAction = () => {
   const [ocrText, setOcrText] = useState('');
   const [isProcessing, setIsProcessing] = useState(false);
   const [progress, setProgress] = useState(0);
+
+  const location = useLocation();
+
+  // New useEffect to prefill the form using props passed from PublicPortal
+  useEffect(() => {
+    if (location.state && location.state.reportData) {
+      const { title, description, location: loc } = location.state.reportData;
+      setCaseTitle(title || '');
+      setCaseDescription(description || '');
+      if (loc) {
+        setStreet(loc.street || '');
+        setCity(loc.city || '');
+        setStateVal(loc.state || '');
+        setPincode(loc.pincode || '');
+      }
+    }
+  }, [location.state]);
 
   const callGeminiAPI = async (userInput) => {
     try {

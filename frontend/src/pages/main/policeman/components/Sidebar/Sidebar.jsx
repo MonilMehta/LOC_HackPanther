@@ -33,20 +33,30 @@ const Sidebar = () => {
 
   // Updated menuItems with role-based access
   const menuItems = [
-    // Citizen-only accessible items (also accessible by officers and admin)
-    {
-      title: "Public Portal",
-      icon: <Shield className="h-5 w-5" />,
-      path: "/main/public-portal",
-      roles: ["citizen", "officer", "admin"],
-    },
-    {
-      title: "Wanted List",
-      icon: <BadgeAlert className="h-5 w-5" />,
-      path: "/main/wanted",
-      roles: ["citizen", "officer", "admin"],
-    },
-
+    // Admin-specific items
+    ...(role === "admin"
+      ? [
+          {
+            title: "Add Officer",
+            icon: <Users className="h-5 w-5" />,
+            path: "/main/add-officer",
+            roles: ["admin"],
+          },
+          {
+            title: "Officer Metrics",
+            icon: <BarChart3 className="h-5 w-5" />,
+            path: "/main/officer-metrics",
+            roles: ["admin"],
+          },
+          {
+            title: "Admin Roster",
+            icon: <Calendar className="h-5 w-5" />,
+            path: "/main/admin-roster",
+            roles: ["admin"],
+          },
+        ]
+      : []),
+  
     // Officer and admin accessible items
     ...(role !== "citizen"
       ? [
@@ -104,33 +114,15 @@ const Sidebar = () => {
             path: "/main/bulletins",
             roles: ["officer", "admin"],
           },
+          {
+            title: "Case Action",
+            icon: <FileText className="h-5 w-5" />,
+            path: "/main/cases/CaseAction",
+            roles: ["officer", "admin"]
+          }
         ]
       : []),
-
-    // Admin-specific items
-    ...(role === "admin"
-      ? [
-          {
-            title: "Add Officer",
-            icon: <Users className="h-5 w-5" />,
-            path: "/main/add-officer",
-            roles: ["admin"],
-          },
-          {
-            title: "Officer Metrics",
-            icon: <BarChart3 className="h-5 w-5" />,
-            path: "/main/officer-metrics",
-            roles: ["admin"],
-          },
-          {
-            title: "Admin Roster",
-            icon: <Calendar className="h-5 w-5" />,
-            path: "/main/admin-roster",
-            roles: ["admin"],
-          },
-        ]
-      : []),
-
+  
     // Officer-specific items
     ...(role === "officer"
       ? [
@@ -142,6 +134,20 @@ const Sidebar = () => {
           },
         ]
       : []),
+  
+    // Citizen-only accessible items (also accessible by officers and admin)
+    {
+      title: "Public Portal",
+      icon: <Shield className="h-5 w-5" />,
+      path: "/main/public-portal",
+      roles: ["citizen", "officer", "admin"],
+    },
+    {
+      title: "Wanted List",
+      icon: <BadgeAlert className="h-5 w-5" />,
+      path: "/main/wanted",
+      roles: ["citizen", "officer", "admin"],
+    },
   ];
 
   const isActiveRoute = (path) => {

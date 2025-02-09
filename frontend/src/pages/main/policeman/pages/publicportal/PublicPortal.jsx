@@ -150,8 +150,8 @@ const PublicPortal = () => {
     ]);
   };
 
-  const handleConvertToCase = (reportId) => {
-    navigate(`/main/cases/CaseAction?reportId=${reportId}`);
+  const handleConvertToCase = (report) => {
+    navigate("/main/cases/CaseAction", { state: { reportData: report } });
   };
 
   const handleAssignCase = (reportId) => {
@@ -260,7 +260,7 @@ const PublicPortal = () => {
                   <div className="flex justify-end gap-2 mt-2">
                     <Button
                       variant="secondary"
-                      onClick={() => handleConvertToCase(report._id)}
+                      onClick={() => handleConvertToCase(report)}
                     >
                       Convert to Case
                     </Button>
